@@ -13,9 +13,11 @@ The images are loaded using ImageDataGenerator.*
 
 ## To train the model: 
 
-    • Load training images in the folder train_images 
+    • Create a folder named train_images and load training images in this folder
 
-    • Load validation images in the folder val_images 
+    • Create a folder named val_images and load validation images in this folder 
+    
+    • Create a folder named results (will be used to save some data) 
 
     • Provide a .txt file containing annotations of BOTH training and validation data, with each line containing:  `filepath,x1,y1,x2,y2,class_name`
         Exemple : train_images/image001.png/215,312,279,391,handwritten
@@ -36,8 +38,11 @@ The images are loaded using ImageDataGenerator.*
     • Provide a .hdf5 file corresponding to the training weights you want to load
 
     • Provide the config.pickle file corresponding to training
+    
+    • Create a folder named test_images and load test images in this folder
+    
+    • Create a folder named results_imgs (the results of the predictions will be saved here)
 
-    • Load images in the folder named test_images
 
     • Provide a .txt file with each line containing:  `filepath,x1,y1,x2,y2,class_name`
         Exemple: test_images/image008.png/215,312,279,391,handwritten
@@ -57,9 +62,11 @@ The images are loaded using ImageDataGenerator.*
 
 ## To make predictions on NON annotated data :
 
-    • Provide a .hdf5 file corresponding to the training weights you want to load
+    • Provide a .hdf5 file corresponding to the training weights you want to load (the hdf5 file must be in the main directory Keras_FasterRCNN_CustomDataset) 
 
-    • Load images in a folder named test_images
+    • Create a folder named test_images and load test images in this folder
+    
+    • Create a folder named results_imgs (the results of the predictions will be saved here)
 
     • If you want to display all the boxes predicted by the model for each image 
         ◦ Run the following command:
