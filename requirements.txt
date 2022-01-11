@@ -1,0 +1,10 @@
+python==2.7
+tensorflow-gpu==1.14.0
+h5py==2.10.0
+keras==2.2.4
+numpy==1.16.6
+opencv-python==4.2.0.32
+scikit-learn==0.20.0
+pandas==0.24.2
+Pillow==6.2.2
+
