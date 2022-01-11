@@ -20,8 +20,8 @@ The images are loaded using ImageDataGenerator.*
     • Create a folder named results (will be used to save some data) 
 
     • Provide a .txt file containing annotations of BOTH training and validation data, with each line containing:  `filepath,x1,y1,x2,y2,class_name`
-        Exemple : train_images/image001.png/215,312,279,391,handwritten
-   	     	     val_images/image256.png/215,312,279,391,handwritten
+        Exemple : train_images/image001.png/215,312,279,391,cat
+   	     	     val_images/image256.png/215,312,279,391,flower
 
     • Run the following command in terminal:
         ◦ python train_frcnn_val.py -o simple_datagen_val -p annotation_file.txt --num_epochs 100 --batch_size 500 (adapt parameters)
@@ -45,7 +45,7 @@ The images are loaded using ImageDataGenerator.*
 
 
     • Provide a .txt file with each line containing:  `filepath,x1,y1,x2,y2,class_name`
-        Exemple: test_images/image008.png/215,312,279,391,handwritten
+        Exemple: test_images/image008.png/215,312,279,391,flower
 
     • Run the following command
         ◦ python test_frcnn_map.py -p annotationfile.txt -o simple 
